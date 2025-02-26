@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Paciente - CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Paciente (CRUD)</h1>
+
+        <form id="pacienteForm">
+            <fieldset>
+
+                <div class="input-group">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" maxlength="100" required placeholder="Digite seu nome">
+                </div>
+
+                <div class="input-group">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" required placeholder="Digite seu CPF">
+                </div>
+
+                <div class="input-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" required placeholder="Ex: (81) 98765-4321">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+                </div>
+
+                <div class="input-group">
+                    <label for="datanascimento">Data de nascimento:</label>
+                    <input type="date" id="datanascimento" name="datanascimento" required>
+                </div>
+
+                <button type="submit" class="btn">Cadastrar</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
